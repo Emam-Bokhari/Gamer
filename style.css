@@ -440,11 +440,13 @@ nav ul li a {
 .policy-link-part1 a,.policy-link-part2 a{
   color:rgba(255, 255, 255, 0.60);
   font-weight: 500;
+  font-size: 18px;
 } 
 .copyright-txt{
   color:rgba(255, 255, 255, 0.60);
   font-weight: 500;
   margin-top:40px;
+  font-size: 18px;
 }
 /* Small Device */
 @media screen and (max-width: 576px) {
@@ -660,6 +662,19 @@ nav ul li a {
   .quick-link-1,.quick-link-2 {
     margin-top:40px;
   }
+  .quick-link-1 a,.quick-link-2 a{
+    font-size: 16px;
+  }
+  .footer-icon-part-1 i,
+.footer-icon-part-2 i {
+  font-size: 28px
+}
+.policy-link-part1 a,.policy-link-part2 a{
+  font-size: 16px;
+} 
+.copyright-txt{
+  font-size: 16px;
+}
 }
 /* Medium Device */
 @media screen and (min-width: 577px) and (max-width: 768px) {
