@@ -4,7 +4,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  border: none;
+  /* border: none; */
   font-family: "Work Sans", sans-serif;
 }
 /* Reusable Css */
@@ -14,10 +14,23 @@
   border-radius: 20px;
   color: #fff;
   font-size: 18px;
+  cursor: pointer;
+  border:none;
 }
 .primary-color {
   color: #ff42a5;
+  font-size: 32px;
+  font-weight: 700;
 }
+.secondary-color{
+    background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 32px;
+    font-weight: 700;
+  }
+
 /* Start Navbar */
 .nav-container {
   margin: auto;
@@ -147,14 +160,6 @@ nav ul li a {
   width: 40%;
   text-align: right;
 }
-.we-are-gamer-description h2 {
-  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 32px;
-  font-weight: 700;
-}
 .we-are-gamer-description p {
   color: #534c64;
   font-size: 16px;
@@ -182,12 +187,6 @@ nav ul li a {
   margin: 20px 0;
   font-size: 16px;
 }
-.online-games-title .funny-videos {
-  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 .online-games-card-container {
   width: 80%;
   margin: 40px auto;
@@ -211,7 +210,7 @@ nav ul li a {
 }
 /* Start Play Instantly, No Downloads No Installs */
 .play-instantly-container {
-  padding-top:40px;
+  padding-top: 40px;
   margin: 0px auto;
   max-width: 1400px;
   display: flex;
@@ -246,83 +245,206 @@ nav ul li a {
   top: 60%;
   left: -12%;
 }
-.play-games-section{
+/* Start Play Games Online Anywhere Anytime!  */
+.play-games-section {
   max-width: 1400px;
-  margin:auto;
+  margin: auto;
 }
-.play-games-container{
-  margin-top:250px;
+.play-games-container {
+  margin-top: 250px;
   display: flex;
   align-items: center;
-  gap:200px;
+  gap: 200px;
 }
-.play-games-img-container{
-  width:50%;
+.play-games-img-container {
+  width: 50%;
 }
-.play-games-description{
-  width:50%;
+.play-games-description {
+  width: 50%;
+  text-align: center;
 }
-.play-games-img img{
-  width:100%;
+.play-games-description h2{
+  font-size: 32px;
+  font-weight: 700;
+  color:#0b0223;
+  line-height: 1.4;
+  margin-bottom: 10px;
 }
-.play-games-img-container{
+.play-games-description p{
+  font-size: 18px;
+  line-height: 1.4;
+  color: #534c64;
+}
+.play-games-img img {
+  width: 100%;
+}
+.play-games-img-container {
   position: relative;
 }
-.play-games-secondary-img{
-  position:absolute;
-  top:60%;
-  right:-15%;
+.play-games-secondary-img {
+  position: absolute;
+  top: 60%;
+  right: -15%;
 }
 /* Start Careers Section */
-.careers-section{
-  margin-top:200px;
-  background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+.careers-section {
+  margin-top: 200px;
+  background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
 }
-.careers-container{
+.careers-container {
   max-width: 1400px;
-  margin:auto;
+  margin: auto;
   display: flex;
   align-items: center;
 }
-.careers-txt{
-  width:50%;
+.careers-txt {
+  width: 50%;
 }
-.careers-img{
-  width:50%;
+.careers-txt h2{
+  color:#fff;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
-.careers-img img{
-  width:100%;
-  background-size: cover;
+.careers-txt p{
+  color:#fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom:10px;
 }
 .careers-description{
+  margin:40px 0;
+}
+.see-all-positions-btn{
+  background-color: #fff;
+  color:#f948b2;
+  font-size: 18px;
+  font-weight: 600;
+}
+.careers-img {
+  width: 50%;
+}
+.careers-img img {
+  width: 100%;
+  background-size: cover;
+}
+.careers-description {
   display: flex;
   justify-content: space-between;
 }
-/* Start Banner Section */
-.button-section{
-  
-  background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+/* Start Button Section */
+.button-section {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
 }
-.button{
+.button {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap:15px;
+  gap: 15px;
   max-width: 243px;
-max-height: 80px;
-background:red;
-border-radius: 50px;
-padding:20px;
+  max-height: 80px;
+  background: #fff;
+  border-radius: 50px;
+  padding: 20px;
+  cursor:pointer;
+  border:2px solid transparent;
+  transition: 0.3s ease;
 }
-.button-container{
-  padding:100px 0 100px 0;
-  max-width:1400px;
-  margin:auto;
+.button:hover{
+  border:2px solid #f948b2;
+}
+.button p{
+  color:#0B0223;
+  font-size: 18px;
+  font-weight: 600;
+}
+.button-container {
+  padding: 100px 0 100px 0;
+  max-width: 1400px;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  gap:30px;
+  gap: 30px;
+}
+/* Start Footer Section */
+.footer-section {
+  background: #0b0223;
+  padding: 128px 0;
+}
+.footer-container {
+  text-align: center;
+}
+.footer-title h1{
+  color:#fff;
+}
+.footer-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.footer-quick-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.quick-link-1,.quick-link-2 {
+  display: flex;
+  gap: 40px;
+  margin-top:40px;
+}
+.quick-link-1 a,.quick-link-2 a{
+  color:#fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+.footer-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.footer-icon-part-1,.footer-icon-part-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  cursor: pointer;
+}
+.footer-icon-part-1 i,
+.footer-icon-part-2 i {
+  font-size: 35px;
+  color: #fff;
+  margin: 40px 0;
+}
+.policy-links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.policy-link-part1,.policy-link-part2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.policy-link-part1 a,.policy-link-part2 a{
+  color:rgba(255, 255, 255, 0.60);
+  font-weight: 500;
+} 
+.copyright-txt{
+  color:rgba(255, 255, 255, 0.60);
+  font-weight: 500;
+  margin-top:40px;
 }
 /* Small Device */
 @media screen and (max-width: 576px) {
@@ -426,7 +548,7 @@ padding:20px;
     padding: 40px;
   }
   .play-instantly-container {
-    padding-top:0px;
+    padding-top: 0px;
     margin: 0 auto;
     flex-direction: column;
   }
@@ -451,7 +573,7 @@ padding:20px;
     font-size: 25px;
   }
   .primary-color {
-    font-size: 22px;
+    font-size: 25px;
   }
   .play-instantly-description p {
     font-size: 16px;
@@ -460,57 +582,84 @@ padding:20px;
     margin-top: 10px;
   }
   /* Play Games Online Anywhere Anytime */
-  .play-games-section{
-    padding:40px;
+  .play-games-section {
+    padding: 40px;
+    margin-top:50px;
   }
-  
-  .play-games-container{
-    margin-top:10px;
+  .play-games-container {
+    margin-top: 0px;
+    gap:140px;
   }
-  .play-games-container{
+  .play-games-container {
     flex-direction: column;
   }
-  .play-games-img-container{
-    width:100%;
+  .play-games-img-container {
+    width: 100%;
   }
-  .play-games-description{
-    width:100%;
+  .play-games-description {
+    width: 100%;
   }
   .play-games-secondary-img {
-    top:60%;
-    left:60%;
+    top: 60%;
+    left: 60%;
   }
-  .play-games-online-secondary-img{
-    padding:30px;
-    width:100%;
+  .play-games-online-secondary-img {
+    padding: 30px;
+    width: 100%;
+  }
+  .play-games-description h2{
+    font-size: 25px;
+  }
+  .play-games-description p{
+    font-size: 16px;
   }
   /* Start Careers Section */
-  .careers-container{
+  .careers-container {
     flex-direction: column;
+    padding:30px;
   }
-  .careers-txt{
-    width:100%;
-    border:2px solid green;
-    margin-bottom: 100px;
+  .careers-txt {
+    width: 100%;
   }
-  .careers-img{
-    width:100%;
-    border:2px solid blue;
+  .careers-img {
+    width: 100%;
   }
-  .careers-img img{
-    width:100%;
+  .careers-img img {
+    width: 100%;
   }
- 
-  .button-container .button img{
-    width:30%;
+  .careers-txt h2{
+    font-size: 25px;
   }
-.button p{
-  font-size: 10px;
-}
-.button{
-  gap:5px;
-  padding:5px;
-}
+  .careers-txt p{
+    font-size: 14px;
+  }
+/* Start Button Section */
+  .button-container .button img {
+    width: 30%;
+  }
+  .button p {
+    font-size: 10px;
+  }
+  .button {
+    gap: 5px;
+    padding: 5px;
+  }
+  /* Start Footer Section */
+  .footer-quick-link {
+    flex-direction: column;
+    gap:5px;
+  }
+  .footer-icon-container {
+    flex-direction: column;
+    gap:0px;
+  }
+  .policy-links-container{
+    flex-direction: column;
+    gap:5px;
+  }
+  .quick-link-1,.quick-link-2 {
+    margin-top:40px;
+  }
 }
 /* Medium Device */
 @media screen and (min-width: 577px) and (max-width: 768px) {
@@ -586,7 +735,7 @@ padding:20px;
   }
   .play-instantly-container {
     flex-direction: column;
-    padding-top:0px;
+    padding-top: 0px;
   }
   .play-instantly-dscription {
     width: 100%;
@@ -610,44 +759,39 @@ padding:20px;
     margin-top: 10px;
   }
   /* Start Play Games Online Anywhere Anytime Section */
-  .play-games-section{
-    padding:40px;
+  .play-games-section {
+    padding: 40px;
   }
-  /* .play-games-container{
-    margin-top:10px;
-  } */
-  .play-games-container{
+  .play-games-container {
     flex-direction: column;
   }
-  .play-games-img-container{
-    width:100%;
+  .play-games-img-container {
+    width: 100%;
   }
-  .play-games-description{
-    width:100%;
+  .play-games-description {
+    width: 100%;
   }
   .play-games-secondary-img {
-    top:60%;
-    left:60%;
+    top: 60%;
+    left: 60%;
   }
-  .play-games-online-secondary-img{
-    padding:30px;
-    width:100%;
+  .play-games-online-secondary-img {
+    padding: 30px;
+    width: 100%;
   }
   /* Start Careers Section */
-    /* Start Careers Section */
-    .careers-container{
-      flex-direction: column;
-    }
-    .careers-txt{
-      width:100%;
-      border:2px solid green;
-      margin-bottom: 100px;
-    }
-    .careers-img{
-      width:100%;
-      border:2px solid blue;
-    }
-    .careers-img img{
-      width:100%;
-    }
+  .careers-container {
+    flex-direction: column;
+    padding:30px;
+  }
+  .careers-txt {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .careers-img {
+    width: 100%;
+  }
+  .careers-img img {
+    width: 100%;
+  }
 }
