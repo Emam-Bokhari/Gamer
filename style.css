@@ -15,6 +15,9 @@
   color: #fff;
   font-size: 18px;
 }
+.primary-color {
+  color: #ff42a5;
+} 
 /* Start Navbar */
 .nav-container {
   margin: auto;
@@ -29,12 +32,12 @@
   align-items: center;
   gap: 20px;
 }
+.logo-title .primary-color{
+  font-size: 36px;
+}
 .logo-title h2 {
   font-size: 36px;
   color: #0b0223;
-}
-span {
-  color: #ff42a5;
 }
 nav {
   width: 50%;
@@ -206,7 +209,42 @@ nav ul li a {
   font-size: 18px;
   font-weight: 500;
 }
-
+/* Start Play Instantly, No Downloads No Installs */
+.play-instantly-container{
+  margin:auto;
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.play-instantly-description{
+  width:50%;
+  text-align: center;
+}
+.play-instantly-description h2{
+  font-size: 32px;
+  font-weight: 700;
+  color: #0B0223;
+  line-height: 1.4;
+}
+.play-instantly-description p{
+  font-size: 18px;
+  line-height: 1.4;
+  color:#534c64;
+  margin-top: 20px;
+}
+.play-instantly-img-container{
+  width:40%;
+  position:relative;
+}
+.main-img img{
+  width:100%;
+}
+.secondary-img{
+  position: absolute;
+  top:60%;
+  left:-12%;
+}
 
 /* Small Device */
 @media screen and (max-width: 576px) {
@@ -305,6 +343,42 @@ nav ul li a {
   .online-games-card p {
     font-size: 14px;
   }
+  /* Start Play Instantly, Section No Downloads No Installs*/
+  .play-instantly-section{
+    padding:40px;
+  }
+  .play-instantly-container{
+    flex-direction: column;
+  }
+  .play-instantly-dscription{
+    width:100%;
+  }
+  .play-instantly-img-container{
+    width:100%;
+    padding:30px;
+  }
+  .play-instantly-img-container img{
+    width:100%;
+  }
+  .secondary-img {
+    width:50%;
+  }
+  .secondary-img{
+    top:55%;
+    left:-5%;
+  }
+  .play-instantly-description h2{
+    font-size: 22px;
+  }
+  .primary-color{
+    font-size: 22px;
+  }
+  .play-instantly-description p{
+    font-size: 10px;
+  }
+  .play-instantly-description p{
+    margin-top: 10px;
+  }
 }
 /* Medium Device */
 @media screen and (min-width: 577px) and (max-width: 768px) {
@@ -374,4 +448,36 @@ nav ul li a {
       gap: 30px;
       text-align: center;
     }
+    /* Start Play Instantly, No Downloads No Installs. */
+    .play-instantly-section{
+      padding:40px;
+    }
+    .play-instantly-container{
+      flex-direction: column;
+    }
+    .play-instantly-dscription{
+      width:100%;
+    }
+    .play-instantly-img-container{
+      width:100%;
+      padding:30px;
+    }
+    .play-instantly-img-container img{
+      padding:20px;
+      width:100%;
+    }
+    .secondary-img {
+      width:50%;
+    }
+    .secondary-img{
+      top:55%;
+      left:-5%;
+    }
+    .play-instantly-description p{
+      font-size: 14px;
+    } 
+    .play-instantly-description p{
+      margin-top: 10px;
+    }
+
 }
