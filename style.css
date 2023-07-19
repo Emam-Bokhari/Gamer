@@ -211,7 +211,7 @@ nav ul li a {
 }
 /* Start Play Instantly, No Downloads No Installs */
 .play-instantly-container{
-  margin:auto;
+  margin:100px auto;
   max-width: 1400px;
   display: flex;
   justify-content: center;
@@ -348,6 +348,7 @@ nav ul li a {
     padding:40px;
   }
   .play-instantly-container{
+    margin:0;
     flex-direction: column;
   }
   .play-instantly-dscription{
