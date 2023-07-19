@@ -164,6 +164,49 @@ nav ul li a {
   font-size: 24px;
   font-weight: 700;
 }
+/* Start Online Games Funny Video Section  */
+.online-games-section {
+  margin-top: 60px;
+}
+.online-games-title h2 {
+  text-align: center;
+  font-size: 34px;
+  color: #0b0223;
+  font-weight: 700;
+}
+.online-games-title p {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 16px;
+}
+.online-games-title .funny-videos {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.online-games-card-container {
+  width: 80%;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.online-games-card {
+  max-width: 342px;
+  max-height: 470px;
+  border-radius: 16px;
+}
+.online-games-card img {
+  width: 100%;
+}
+.online-games-card p {
+  margin-top: 10px;
+  color: #534c64;
+  font-size: 18px;
+  font-weight: 500;
+}
+
 
 /* Small Device */
 @media screen and (max-width: 576px) {
@@ -197,17 +240,17 @@ nav ul li a {
     justify-content: center;
     padding-bottom: 40px;
   }
-  .banner-description h2{
-    font-size:24px;
+  .banner-description h2 {
+    font-size: 24px;
   }
-  .banner-description h1{
-    font-size:42px;
+  .banner-description h1 {
+    font-size: 42px;
   }
-  .banner-description p{
+  .banner-description p {
     font-size: 14px;
   }
-  .primary-btn{
-    font-size:16px;
+  .primary-btn {
+    font-size: 16px;
   }
   .banner-img {
     width: 100%;
@@ -216,33 +259,51 @@ nav ul li a {
     width: 100%;
   }
   /* Start we are gamer section */
-  .we-are-gamer-section{
-    background:none;
-    padding:40px;
+  .we-are-gamer-section {
+    background: none;
+    padding: 40px;
   }
-  .we-are-gamer-container{
+  .we-are-gamer-container {
     flex-direction: column;
   }
-  .we-are-gamer-bg-img img{
-    width:100%;
+  .we-are-gamer-bg-img img {
+    width: 100%;
   }
-  .we-are-gamer-bg-img{
-    width:100%;
+  .we-are-gamer-bg-img {
+    width: 100%;
   }
   .we-are-gamer-description {
     width: 100%;
     text-align: center;
-    margin-top:40px;
+    margin-top: 40px;
   }
-  .we-are-gamer-description h2{
-    font-size:28px;
+  .we-are-gamer-description h2 {
+    font-size: 28px;
   }
   .we-are-gamer-description p {
     font-size: 14px;
-
   }
   .we-are-gamer-description p:nth-of-type(3) {
     font-size: 18px;
+  }
+  /* Start Online Funny Videos Section */
+  .online-games-section {
+    margin-top: 10px;
+    padding: 40px;
+  }
+  .online-games-title h2 {
+    font-size: 25px;
+  }
+  .online-games-title p {
+    font-size: 12px;
+  }
+  .online-games-card-container {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+  .online-games-card p {
+    font-size: 14px;
   }
 }
 /* Medium Device */
@@ -273,11 +334,11 @@ nav ul li a {
     justify-content: center;
     padding-bottom: 40px;
   }
-  .banner-description h2{
-    font-size:24px;
+  .banner-description h2 {
+    font-size: 24px;
   }
-  .banner-description h1{
-    font-size:42px;
+  .banner-description h1 {
+    font-size: 42px;
   }
   .banner-img {
     width: 100%;
@@ -286,21 +347,31 @@ nav ul li a {
     width: 100%;
   }
   /* Start we are gamer section */
-  .we-are-gamer-section{
-    background:none;
-    padding:40px;
+  .we-are-gamer-section {
+    background: none;
+    padding: 40px;
   }
-  .we-are-gamer-container{
+  .we-are-gamer-container {
     flex-direction: column;
   }
-  .we-are-gamer-bg-img img{
-    width:100%;
+  .we-are-gamer-bg-img img {
+    width: 100%;
   }
-  .we-are-gamer-bg-img{
-    width:100%;
+  .we-are-gamer-bg-img {
+    width: 100%;
   }
   .we-are-gamer-description {
     width: 100%;
     text-align: center;
   }
+    /* Start Online Funny Videos Section */
+    .online-games-section {
+      margin-top: 10px;
+      padding: 40px;
+    }
+    .online-games-card-container {
+      flex-direction: column;
+      gap: 30px;
+      text-align: center;
+    }
 }
