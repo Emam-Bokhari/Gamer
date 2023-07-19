@@ -17,7 +17,7 @@
 }
 .primary-color {
   color: #ff42a5;
-} 
+}
 /* Start Navbar */
 .nav-container {
   margin: auto;
@@ -32,7 +32,7 @@
   align-items: center;
   gap: 20px;
 }
-.logo-title .primary-color{
+.logo-title .primary-color {
   font-size: 36px;
 }
 .logo-title h2 {
@@ -210,40 +210,68 @@ nav ul li a {
   font-weight: 500;
 }
 /* Start Play Instantly, No Downloads No Installs */
-.play-instantly-container{
-  margin:100px auto;
+.play-instantly-container {
+  padding-top:40px;
+  margin: 0px auto;
   max-width: 1400px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.play-instantly-description{
-  width:50%;
+.play-instantly-description {
+  width: 100%;
   text-align: center;
 }
-.play-instantly-description h2{
+.play-instantly-description h2 {
   font-size: 32px;
   font-weight: 700;
-  color: #0B0223;
+  color: #0b0223;
   line-height: 1.4;
 }
-.play-instantly-description p{
+.play-instantly-description p {
   font-size: 18px;
   line-height: 1.4;
-  color:#534c64;
+  color: #534c64;
   margin-top: 20px;
 }
-.play-instantly-img-container{
-  width:40%;
-  position:relative;
+.play-instantly-img-container {
+  width: 40%;
+  position: relative;
 }
-.main-img img{
+.main-img img {
+  width: 100%;
+}
+.secondary-img {
+  position: absolute;
+  top: 60%;
+  left: -12%;
+}
+.play-games-section{
+  max-width: 1400px;
+  margin:auto;
+}
+.play-games-container{
+  margin-top:250px;
+  display: flex;
+  align-items: center;
+  gap:200px;
+}
+.play-games-img-container{
+  width:50%;
+}
+.play-games-description{
+  width:50%;
+}
+.play-games-img img{
   width:100%;
 }
-.secondary-img{
-  position: absolute;
+.play-games-img-container{
+  position: relative;
+}
+.play-games-secondary-img{
+  position:absolute;
   top:60%;
-  left:-12%;
+  right:-15%;
 }
 
 /* Small Device */
@@ -344,42 +372,70 @@ nav ul li a {
     font-size: 14px;
   }
   /* Start Play Instantly, Section No Downloads No Installs*/
-  .play-instantly-section{
-    padding:40px;
+  .play-instantly-section {
+    padding: 40px;
   }
-  .play-instantly-container{
-    margin:0;
+  .play-instantly-container {
+    padding-top:0px;
+    margin: 0 auto;
     flex-direction: column;
   }
-  .play-instantly-dscription{
-    width:100%;
+  .play-instantly-dscription {
+    width: 100%;
   }
-  .play-instantly-img-container{
-    width:100%;
-    padding:30px;
+  .play-instantly-img-container {
+    width: 100%;
+    padding: 30px;
   }
-  .play-instantly-img-container img{
-    width:100%;
+  .play-instantly-img-container img {
+    width: 100%;
   }
   .secondary-img {
-    width:50%;
+    width: 50%;
   }
-  .secondary-img{
-    top:55%;
-    left:-5%;
+  .secondary-img {
+    top: 55%;
+    left: -5%;
   }
-  .play-instantly-description h2{
+  .play-instantly-description h2 {
+    font-size: 25px;
+  }
+  .primary-color {
     font-size: 22px;
   }
-  .primary-color{
-    font-size: 22px;
+  .play-instantly-description p {
+    font-size: 16px;
   }
-  .play-instantly-description p{
-    font-size: 10px;
-  }
-  .play-instantly-description p{
+  .play-instantly-description p {
     margin-top: 10px;
   }
+  /* Play Games Online Anywhere Anytime */
+  .play-games-section{
+    padding:40px;
+  }
+  
+  .play-games-container{
+    margin-top:10px;
+  }
+  .play-games-container{
+    flex-direction: column;
+  }
+  .play-games-img-container{
+    width:100%;
+  }
+  .play-games-description{
+    width:100%;
+  }
+  .play-games-secondary-img {
+    top:60%;
+    left:60%;
+  }
+  .play-games-online-secondary-img{
+    padding:30px;
+    width:100%;
+
+  }
+  
 }
 /* Medium Device */
 @media screen and (min-width: 577px) and (max-width: 768px) {
@@ -439,46 +495,43 @@ nav ul li a {
     width: 100%;
     text-align: center;
   }
-    /* Start Online Funny Videos Section */
-    .online-games-section {
-      margin-top: 10px;
-      padding: 40px;
-    }
-    .online-games-card-container {
-      flex-direction: column;
-      gap: 30px;
-      text-align: center;
-    }
-    /* Start Play Instantly, No Downloads No Installs. */
-    .play-instantly-section{
-      padding:40px;
-    }
-    .play-instantly-container{
-      flex-direction: column;
-    }
-    .play-instantly-dscription{
-      width:100%;
-    }
-    .play-instantly-img-container{
-      width:100%;
-      padding:30px;
-    }
-    .play-instantly-img-container img{
-      padding:20px;
-      width:100%;
-    }
-    .secondary-img {
-      width:50%;
-    }
-    .secondary-img{
-      top:55%;
-      left:-5%;
-    }
-    .play-instantly-description p{
-      font-size: 14px;
-    } 
-    .play-instantly-description p{
-      margin-top: 10px;
-    }
-
+  /* Start Online Funny Videos Section */
+  .online-games-section {
+    margin-top: 10px;
+    padding: 40px;
+  }
+  .online-games-card-container {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+  /* Start Play Instantly, No Downloads No Installs. */
+  .play-instantly-section {
+    padding: 40px;
+  }
+  .play-instantly-container {
+    flex-direction: column;
+    padding-top:0px;
+  }
+  .play-instantly-dscription {
+    width: 100%;
+  }
+  .play-instantly-img-container {
+    width: 100%;
+    padding: 30px;
+  }
+  .play-instantly-img-container img {
+    padding: 20px;
+    width: 100%;
+  }
+  .secondary-img {
+    width: 50%;
+  }
+  .secondary-img {
+    top: 55%;
+    left: -5%;
+  }
+  .play-instantly-description p {
+    margin-top: 10px;
+  }
 }
